@@ -15,30 +15,32 @@
 
 <body>
 
-  <main>
-    <div class="shadow">
+  <main id="ratingPage">
+    <div class="shadow starIcon">
       <img src="./images/icon-star.svg" alt="star icon">
     </div>
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
       offering!</p>
     <section>
-      <button class="shadow">1</button>
-      <button class="shadow">2</button>
-      <button class="shadow">3</button>
-      <button class="shadow">4</button>
-      <button class="shadow">5</button>
+      <button class="shadow unclickedButton ratingButton ratingButton1">1</button>
+      <button class="shadow unclickedButton ratingButton ratingButton2">2</button>
+      <button class="shadow unclickedButton ratingButton ratingButton3">3</button>
+      <button class="shadow unclickedButton ratingButton ratingButton4">4</button>
+      <button class="shadow unclickedButton ratingButton ratingButton5">5</button>
     </section>
-    <button>Submit</button>
+    <button id="submitButton" class="submitButton">Submit</button>
   </main>
 
-  <main class="hidden">
+  <main id="thankyouPage" class="thankyouPage hidden">
     <img src="./images/illustration-thank-you.svg" alt="">
-    <p class="ratingDisplay">You selected 4 out of 5</p>
+    <p id="ratingDisplay" class="ratingDisplay">You selected 4 out of 5</p>
     <h1>Thank you!</h1>
     <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
       touch!</p>
   </main>
+
+  <script src="script.js"></script>
 
 </body>
 
